@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV & Portfolio | Muhammad Panjalu Ardhi</title>
     
-    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -33,47 +29,35 @@
         .card-hover:hover { transform: translateY(-5px); border-color: #14b8a6; }
         #ai-response-container { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; border-radius: 1rem; }
         #ai-response-container.open { max-height: 1000px; border: 1px solid rgba(20, 184, 166, 0.3); margin-top: 1rem; padding: 1rem; background: rgba(15, 23, 42, 0.5); }
-        
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #0f172a; }
-        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
-        ::-webkit-scrollbar-thumb:hover { background: #14b8a6; }
     </style>
 </head>
-<body class="antialiased selection:bg-primary selection:text-white">
+<body class="antialiased">
 
     <!-- Navbar -->
     <nav class="glass-nav fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-            <div class="font-bold text-2xl gradient-text tracking-tighter">P.A.</div>
+            <div class="font-bold text-2xl gradient-text">P.A.</div>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#home" class="hover:text-primary transition">Beranda</a>
                 <a href="#profile" class="hover:text-primary transition">Profil</a>
-                <a href="#education" class="hover:text-primary transition">Pendidikan</a>
                 <a href="#experience" class="hover:text-primary transition">Pengalaman</a>
-                <a href="#ai-career" class="text-teal-400 font-bold border-b border-teal-400">✨ Smart Check</a>
+                <a href="#ai-career" class="text-teal-400 font-bold">✨ AI Analysis</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="min-h-screen flex items-center pt-20">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             <div data-aos="fade-right">
                 <h2 class="text-teal-400 font-bold mb-2 uppercase tracking-widest text-xs">Siswa SMKN 1 Karanganyar</h2>
                 <h1 class="text-5xl md:text-7xl font-bold mb-6 uppercase leading-tight">Muhammad <br><span class="gradient-text">Panjalu Ardhi</span></h1>
-                
                 <div class="flex gap-4 mb-8">
-                    <a href="https://github.com/is-reality1" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center hover:text-primary transition shadow-lg"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/is_reality1" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center hover:text-primary transition shadow-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/is-reality1" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center hover:text-primary transition"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/is_reality1" target="_blank" class="w-10 h-10 rounded-full bg-cardBg border border-gray-700 flex items-center justify-center hover:text-primary transition"><i class="fab fa-instagram"></i></a>
                 </div>
-
-                <div class="flex flex-wrap gap-4">
-                    <a href="#profile" class="bg-primary hover:bg-teal-600 text-white font-bold py-4 px-10 rounded-full transition shadow-lg shadow-teal-500/20">Lihat Profil</a>
-                    <a href="#ai-career" class="border border-gray-600 hover:border-white text-white font-bold py-4 px-10 rounded-full transition">Tanya AI</a>
-                </div>
+                <a href="#ai-career" class="bg-primary hover:bg-teal-600 text-white font-bold py-4 px-10 rounded-full inline-block transition shadow-lg">Cek Profil AI</a>
             </div>
-            
             <div class="flex justify-center" data-aos="zoom-in">
                 <div class="w-72 h-96 bg-cardBg rounded-3xl border-2 border-white/10 overflow-hidden shadow-2xl relative">
                     <img src="https://lh3.googleusercontent.com/u/0/d/1VDNRAKOpktVr7A3Rw5mywNWSpvE4AI5V=w800-h1000-iv1" alt="Profile" class="w-full h-full object-cover">
@@ -82,143 +66,112 @@
         </div>
     </section>
 
-    <!-- Section Profile (TENTANG SAYA) -->
+    <!-- Profile -->
     <section id="profile" class="py-24 bg-slate-900/50">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Profil <span class="gradient-text">Profesional</span></h2>
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Tentang <span class="gradient-text">Saya</span></h2>
             <div class="bg-cardBg p-8 rounded-3xl border border-gray-700 shadow-xl" data-aos="fade-up">
                 <p class="text-gray-300 leading-relaxed mb-8 text-lg">
-                    Halo! Saya adalah siswa di <span class="text-teal-400 font-semibold uppercase">SMK Negeri 1 Karanganyar</span> jurusan Manajemen Perkantoran dan Layanan Bisnis. Saya memiliki dedikasi tinggi dalam mengembangkan kemampuan administrasi digital serta eksplorasi di bidang industri kreatif visual.
+                    Saya adalah siswa di <span class="text-teal-400 font-semibold uppercase">SMK Negeri 1 Karanganyar</span> jurusan Manajemen Perkantoran dan Layanan Bisnis. Berfokus pada administrasi digital dan video editing.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
                     <div class="p-5 bg-slate-900/50 rounded-2xl border border-gray-700">
-                        <i class="fas fa-keyboard text-teal-400 mb-3 block text-xl"></i>
-                        <h4 class="text-white font-bold mb-1">Mengetik 10 Jari</h4>
-                        <p class="text-gray-400 text-sm">Memiliki kecepatan dan akurasi tinggi dalam memproses dokumen dan data administratif secara efisien.</p>
+                        <i class="fas fa-keyboard text-teal-400 mb-2 block text-xl"></i>
+                        <h4 class="text-white font-bold mb-1 uppercase text-sm">Mengetik 10 Jari</h4>
+                        <p class="text-gray-400 text-xs italic">Akurasi tinggi dalam pengolahan dokumen.</p>
                     </div>
                     <div class="p-5 bg-slate-900/50 rounded-2xl border border-gray-700">
-                        <i class="fas fa-video text-teal-400 mb-3 block text-xl"></i>
-                        <h4 class="text-white font-bold mb-1">Video Editing</h4>
-                        <p class="text-gray-400 text-sm">Berpengalaman dalam mengolah konten visual yang komunikatif untuk kebutuhan organisasi maupun media sosial.</p>
+                        <i class="fas fa-video text-teal-400 mb-2 block text-xl"></i>
+                        <h4 class="text-white font-bold mb-1 uppercase text-sm">Video Editing</h4>
+                        <p class="text-gray-400 text-xs italic">Pengalaman mengedit konten untuk organisasi.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Experience (ORGANISASI) -->
+    <!-- Experience -->
     <section id="experience" class="py-24">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Pengalaman <span class="gradient-text">Organisasi</span></h2>
-            <div class="grid md:grid-cols-2 gap-6 text-left">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center" data-aos="fade-up">Pengalaman <span class="gradient-text">Organisasi</span></h2>
+            <div class="grid md:grid-cols-2 gap-6">
                 <div class="bg-cardBg p-6 rounded-2xl border border-gray-700 card-hover" data-aos="fade-up">
-                    <h3 class="text-xl font-bold text-teal-400 uppercase tracking-tight">Media Jurnalis (MJ)</h3>
-                    <p class="text-gray-400 text-xs mb-3 uppercase tracking-widest font-bold">Sie Editing</p>
-                    <p class="text-gray-300 text-sm">Bertanggung jawab penuh dalam mengatur alur pasca-produksi berita sekolah, penyuntingan video kegiatan, serta menjaga kualitas dokumentasi digital.</p>
-                </div>
-                <div class="bg-cardBg p-6 rounded-2xl border border-gray-700 card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold text-teal-400 uppercase tracking-tight">OSIS SMKN 1 Karanganyar</h3>
-                    <p class="text-gray-400 text-xs mb-3 uppercase tracking-widest font-bold">Sekbid Multimedia</p>
-                    <p class="text-gray-300 text-sm">Mengelola strategi publikasi digital kesiswaan, memproduksi aset visual untuk event sekolah, serta mendokumentasikan setiap momen penting organisasi.</p>
+                    <h3 class="text-xl font-bold text-teal-400 uppercase">Media Jurnalis (MJ)</h3>
+                    <p class="text-gray-400 text-xs mb-3 font-bold uppercase tracking-widest">Sie Editing</p>
+                    <p class="text-gray-300 text-sm">Mengatur alur editing video berita sekolah dan dokumentasi digital.</p>
                 </div>
                 <div class="bg-cardBg p-6 rounded-2xl border border-gray-700 card-hover" data-aos="fade-up">
-                    <h3 class="text-xl font-bold text-teal-400 uppercase tracking-tight">PMR (Palang Merah Remaja)</h3>
-                    <p class="text-gray-400 text-xs mb-3 uppercase tracking-widest font-bold">Sie Kreatif</p>
-                    <p class="text-gray-300 text-sm">Merancang desain materi edukasi kesehatan dan kampanye kemanusiaan agar lebih menarik bagi kalangan remaja melalui konten kreatif digital.</p>
-                </div>
-                <div class="bg-cardBg p-6 rounded-2xl border border-gray-700 card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold text-teal-400 uppercase tracking-tight">Pramuka</h3>
-                    <p class="text-gray-400 text-xs mb-3 uppercase tracking-widest font-bold">Sie Media</p>
-                    <p class="text-gray-300 text-sm">Mendokumentasikan seluruh kegiatan lapangan dan mengelola kanal informasi digital untuk memperluas jangkauan informasi kepramukaan sekolah.</p>
+                    <h3 class="text-xl font-bold text-teal-400 uppercase">OSIS SMKN 1 Karanganyar</h3>
+                    <p class="text-gray-400 text-xs mb-3 font-bold uppercase tracking-widest">Sekbid Multimedia</p>
+                    <p class="text-gray-300 text-sm">Mengelola publikasi digital kesiswaan dan desain event sekolah.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-24 bg-slate-900/50">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Riwayat <span class="gradient-text">Pendidikan</span></h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 bg-cardBg rounded-2xl border border-gray-700">
-                    <h3 class="font-bold">SDN 2 Karanganyar</h3>
-                    <p class="text-teal-400 text-sm">Masa Studi: 2015 — 2021</p>
-                </div>
-                <div class="p-6 bg-cardBg rounded-2xl border border-gray-700">
-                    <h3 class="font-bold">SMPN 1 Karanganyar</h3>
-                    <p class="text-teal-400 text-sm">Masa Studi: 2021 — 2024</p>
-                </div>
-                <div class="p-6 bg-cardBg rounded-2xl border border-gray-700 border-teal-500/30">
-                    <h3 class="font-bold">SMKN 1 Karanganyar</h3>
-                    <p class="text-teal-400 text-sm italic font-medium tracking-wide">Masa Studi: 2024 — Sekarang (Aktif)</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Career Section -->
-    <section id="ai-career" class="py-24 bg-slate-900/80 border-t border-white/5">
+    <!-- AI Section -->
+    <section id="ai-career" class="py-24 bg-slate-900/80">
         <div class="max-w-3xl mx-auto px-4">
             <div class="bg-cardBg p-8 rounded-3xl border border-gray-700 shadow-2xl">
-                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2">
-                    <span class="text-teal-400">✨</span> Smart Career Analysis
-                </h2>
-                <div class="flex flex-col sm:flex-row gap-3">
-                    <input type="text" id="job-input" placeholder="Tanya tentang keahlian Panjalu..." class="flex-1 bg-slate-900 border border-gray-600 rounded-2xl px-5 py-4 text-white outline-none focus:border-primary transition-all">
-                    <button onclick="askGemini()" id="ask-btn" class="bg-primary hover:bg-teal-600 px-8 py-4 rounded-2xl font-bold text-white transition flex items-center justify-center gap-2">
-                        Analisis
-                    </button>
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-2"><span class="text-teal-400">✨</span> Smart AI Analisis</h2>
+                <div class="flex gap-2">
+                    <input type="text" id="job-input" placeholder="Tanya tentang skill Panjalu..." class="flex-1 bg-slate-900 border border-gray-600 rounded-xl px-4 py-3 text-white outline-none focus:border-teal-400 transition-all">
+                    <button onclick="askGemini()" id="ask-btn" class="bg-primary hover:bg-teal-600 px-6 py-3 rounded-xl font-bold text-white transition">Tanya</button>
                 </div>
                 <div id="ai-response-container">
-                    <div id="ai-response" class="text-gray-300 text-sm leading-relaxed text-left">
-                        Silakan masukkan pertanyaan untuk memulai analisis profil...
-                    </div>
+                    <div id="ai-response" class="text-gray-300 text-sm leading-relaxed p-4">Hasil akan muncul di sini...</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center border-t border-gray-800">
-        <p class="text-gray-500 text-xs tracking-widest uppercase">&copy; 2026 Muhammad Panjalu Ardhi</p>
+    <footer class="py-10 text-center border-t border-gray-800 text-gray-500 text-xs uppercase tracking-widest">
+        &copy; 2026 Muhammad Panjalu Ardhi
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({ once: true });
 
         const API_KEY = "AIzaSyAewFlwrt0WDxnHiOkJ5Wlw_aEy467CGvE"; 
-        const panjaluProfile = "Muhammad Panjalu Ardhi, siswa SMKN 1 Karanganyar (MPLB). Ahli mengetik 10 jari & video editing. Pengalaman: Sie Editing Media Jurnalis, Sekbid Multimedia OSIS, Sie Kreatif PMR, Sie Media Pramuka.";
+        const panjaluProfile = "Nama: Muhammad Panjalu Ardhi. Sekolah: SMKN 1 Karanganyar (MPLB). Skill: Mengetik 10 jari, Video Editing. Organisasi: Media Jurnalis (Editing), OSIS (Multimedia), PMR, Pramuka.";
 
         async function askGemini() {
             const query = document.getElementById('job-input').value;
-            const btn = document.getElementById('ask-btn');
             const resDiv = document.getElementById('ai-response');
             const container = document.getElementById('ai-response-container');
+            const btn = document.getElementById('ask-btn');
 
             if(!query) return;
 
             btn.disabled = true;
             btn.innerHTML = "...";
             container.classList.add('open');
-            resDiv.innerHTML = "Sedang menganalisis profil...";
+            resDiv.innerHTML = "Menghubungkan ke server...";
 
             try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+                // MENGGUNAKAN VERSI V1 STABIL
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                        contents: [{ parts: [{ text: `Kamu asisten profesional Panjalu Ardhi. Info: ${panjaluProfile}. Jawab pertanyaan ini secara informatif: ${query}` }] }]
+                        contents: [{ parts: [{ text: `Kamu asisten profil Muhammad Panjalu Ardhi. Data: ${panjaluProfile}. Jawab singkat pertanyaan: ${query}` }] }]
                     })
                 });
-                
+
                 const data = await response.json();
-                resDiv.innerHTML = data.candidates[0].content.parts[0].text;
-            } catch (e) { 
-                resDiv.innerHTML = "Gagal memuat. Periksa koneksi internet."; 
+                
+                if (data.candidates && data.candidates[0]) {
+                    resDiv.innerHTML = data.candidates[0].content.parts[0].text;
+                } else {
+                    resDiv.innerHTML = "AI sedang sibuk. Coba tanya hal lain.";
+                }
+
+            } catch (error) {
+                resDiv.innerHTML = "Gagal terhubung. Pastikan kamu online atau coba upload ke GitHub Pages.";
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = "Analisis";
+                btn.innerHTML = "Tanya";
             }
         }
     </script>
